@@ -5,40 +5,110 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+			integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
 	</head>
 	<body>
 		<div class="hero">
 			<nav>
 				<!-- <img src="./portfolio_site_img/logo.png" class="logo" /> -->
-                <h1 class="logo">Pritam<span>.s</span></h1>
+				<h1 class="logo">Pritam<span>.s</span></h1>
 				<ul>
-					<li><a href="">HOME</a></li>
-					<li><a href="">ABOUT</a></li>
-					<li><a href="">PORTFOLIO</a></li>
-					<li><a href="">SERVICES</a></li>
-					<li><a href="">HIRE ME</a></li>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#portfolio">PORTFOLIO</a></li>
+					<li><a href="#services">SERVICES</a></li>
+					<li><a href="#hire-me">HIRE ME</a></li>
 				</ul>
-                <i class="fa-solid fa-moon " id="icon"></i>
+				<i class="fa-solid fa-moon" id="icon"></i>
 			</nav>
-            <div class="info">
-                <h2>I'm <span>Pritam</span></h2>
-                <p>This is my official portfolio website to showcase my
-                    all works related to web development 
-                </p>
-                <a href="">Download CV</a>
-            </div>
-            <div class="img-box">
-                <img src="./portfolio_site_img/pattern.png" class="back-img">
-                <img src="./portfolio_site_img/Picsart_24-12-25_12-14-26-111.png" height="100" class="main-img">
-            </div>
-            <div class="social-links">
-                <a href="" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="" class="github"><i class="fa-brands fa-github"></i></a>
-                <a href="" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
-            </div>
+			<div class="info">
+				<h2>I'm <span>Pritam</span></h2>
+				<p>
+					This is my official portfolio website to showcase my all works related
+					to web development
+				</p>
+				<a href="">Download CV</a>
+			</div>
+			<div class="img-box">
+				<img src="./portfolio_site_img/pattern.png" class="back-img" />
+				<img
+					src="./portfolio_site_img/portfolio_img.png"
+					height="100"
+					class="main-img" />
+			</div>
+			<div class="social-links">
+				<a href="" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+				<a href="" class="github"><i class="fa-brands fa-github"></i></a>
+				<a href="" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+			</div>
+		</div>
+		<!-- about -->
+		<div id="about">
+			<div class="container">
+				<div class="row">
+					<div class="about-col-1">
+						<img src="./portfolio_site_img/IMG_20241011_165211.jpg" />
+					</div>
+					<div class="about-col-2">
+						<h2 class="sub-title">About Me</h2>
+						<p>
+							I am a passionate Software Development Engineer with expertise in
+							building scalable solutions. My skills range from frontend
+							development to backend engineering, with a keen interest in
+							creating impactful user experiences.
+						</p>
+						<div class="tab-titles">
+							<p class="tab-links active-link" onclick="opentab('skills')">
+								Skills
+							</p>
+							<p class="tab-links" onclick="opentab('experience')">
+								Experience
+							</p>
+							<p class="tab-links" onclick="opentab('education')">Education</p>
+						</div>
+						<div class="tab-contents active-tab" id="skills">
+							<ul>
+								<li><span>Programming Lang.</span><br />C,Python,Java</li>
+								<li><span>web development</span><br />Html,CSS,JavaScript</li>
+								<li>
+									<span>Backend development</span
+									><br />Java,SpringBoot,sql,mysql
+								</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="experience">
+							<ul>
+								<li>
+									<span>Problem solving</span><br />Data Structure & Algorithm
+								</li>
+								<li><span>web development</span><br />web app development</li>
+								<li>
+									<span>Backend development</span><br />Building logics and
+									store data for web design
+								</li>
+							</ul>
+						</div>
+						<div class="tab-contents" id="education">
+							<ul>
+								<li><span>2020</span><br />Secondary Education</li>
+								<li><span>2022</span><br />Higher Scendary Education</li>
+								<li><span>2022-2026</span><br />B-tech CSE</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ------service----- -->
+		<div id="services"></div>
+		<div class="container">
+			
 		</div>
 	</body>
-	<script src="app.js">
-    </script>
+	<script src="app.js"></script>
 </html>
