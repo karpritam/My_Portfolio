@@ -1,6 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 .light-theme{
@@ -8,8 +12,17 @@
     --secondary-color:#212121;
 }
 :root{
-    --primary-color:#000106;
-    --secondary-color:#fff;
+    --primary-color:linear-gradient(rgb(59, 59, 59), rgb(17, 17, 18));
+    --secondary-color:#fff; 
+}
+
+body{
+    color: var(--secondary-color);
+    background: var(--primary-color);
+}
+#hero {
+	width: 100%;
+	height: 100vh;
 }
 #icon{
     cursor: pointer;
@@ -21,7 +34,7 @@ nav ul{
     flex: 1;
     text-align: right;
 }
-.hero{
+#hero{
     height: 100vh;
     width: 100%;
     background: var(--primary-color);
@@ -29,14 +42,22 @@ nav ul{
     position: relative;
 }
 nav{
-    width: 84%;
+    background: var(--primary-color);
+    box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.5);
+    width: 100%;
     margin: auto;
     padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 100;
+    /* position: fixed;
+	top: 0;
+	left: 0;
+	right: 0; */
 }
-h1{
+nav h1{
+    padding-left: 50px;
     width: 100px;
     cursor: pointer;
     color: var(--secondary-color);
@@ -52,9 +73,24 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: var(--secondary-color);
+    font-size: 16px;
+    position: relative;
 }
-nav ul li a:hover{
-    color: #ff4321;
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background:#ff4321;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav i{
+    padding-right: 50px;
 }
 .info{
     margin-left: 8%;
@@ -73,7 +109,7 @@ nav ul li a:hover{
     background: var(--secondary-color);
     padding: 10px 18px;
     text-decoration: none;
-    color:var(--primary-color);
+    color:#ff4321;
     display: inline-block;
     margin: 30px 0;
     border-radius: 5px;
@@ -136,11 +172,52 @@ nav ul li a:hover{
     background: #0e0e0e;
 }
 
+.back-to-top{
+    height: 44px;
+	width: 44px;
+	border: none;
+	outline: none;
+	border-radius: 50%;
+	color: #fff;
+	background-color: #ff004f;
+	position: relative;
+    z-index: 100;
+	left: 1400px;
+	bottom: 100px;
+	position: sticky;
+    top: 90vh;
+	display: inline-block;
+	animation: floatImage 4s ease-in-out infinite;
+}
+@keyframes floatImage {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-1.6rem);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+.back-to-top:hover {
+	/* background-color: #0056b3; */
+	transform: scale(1.1);
+}
+.back-to-top i {
+	text-align: center;
+	margin: 10px;
+	position: relative;
+	top: 5px;
+	left: 5px;
+	color: #fff;
+}
+
 /* ----about----- */
 #about{
     padding: 50px 10px;
-    color: var(--secondary-color);
-    background: var(--primary-color);
+    /* color: var(--secondary-color);
+    background: var(--primary-color); */
 }
 .row{
     display: flex;
@@ -201,3 +278,150 @@ nav ul li a:hover{
 .tab-contents.active-tab{
     display: block;
 }
+
+/* ---services---- */
+
+#services{
+    padding: 50px 0;
+    
+}
+.container{
+    /* color: var(--secondary-color);
+    background: var(--primary-color); */
+    margin: 90px;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    /* background: var(--secondary-color);
+    color: var(--primary-color); */
+    background: transparent;
+    box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 400;
+    border-radius: 20px;
+    transition: background 0.5s,transform 0.5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: blue;
+    background: yellow;
+    border-radius: 30px;
+    height: 25px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+
+/* ----portfolio---- */
+
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    color: var(--primary-color);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: var(--secondary-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.bttn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: background 0.5s;
+    position: relative;
+}
+.bttn:hover{
+    background: #ff004f;
+}
+.hover-msg::after{
+    content:"go to my github acc."; /* Text to show on hover */
+    margin-top: 10px;
+    position: absolute;
+    left:15px;
+    top: 100%;/* Positioned below the button */
+    opacity: 0; /* Initially hidden */
+    transition :opacity 0.3s ease-in-out;
+}
+.hover-msg:hover::after{
+    opacity: 1;/*after hover it is vissible */
+}
+
+
