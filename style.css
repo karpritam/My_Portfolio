@@ -138,9 +138,15 @@ nav i {
 .img-box:hover .main-img {
 	left: 54%;
 }
-.social-links {
+.socials{
+	position: relative;
+	margin-top: 9rem;
+}
+.socials .social-links {
 	margin-left: 8%;
 	margin-top: 50px;
+	list-style: none;
+	display: flex;
 }
 .social-links a {
 	font-size: 30px;
@@ -435,9 +441,9 @@ nav i {
 }
 .content-left p {
 	margin-top: 30px;
+	margin-left: 10px;
 }
-.content-left p i {
-	font-size: 2rem;
+.content-left p i{
 	line-height: 44px;
 	color: #00d9ff;
 	background-color: #09011b;
@@ -475,6 +481,11 @@ form .bttn2 {
 	margin-top: 20px;
 	cursor: pointer;
 }
+.social ul li{
+	
+	
+}
+
 /* --copyright--- */
 .copyright {
 	width: 100%;
