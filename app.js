@@ -38,3 +38,33 @@ function opentab(tabname) {
 	event.currentTarget.classList.add("active-link");
 	document.getElementById(tabname).classList.add("active-tab");
 }
+
+
+// -----typed js------
+const typed=new Typed('.multiple-text',{
+    strings:['Software Development Engineer(SDE)'],
+    // strings:['software engineer','fullstack developer'],
+    typeSpeed: 70,
+    // backSpeed:70,
+    // backDelay: 1000,
+    // loop:true,
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const backToTop = document.querySelector(".back-to-top");
+    const Myportfolio = document.querySelector("#Myportfolio");
+
+    // Function to show/hide the back-to-top arrow
+    function toggleBackToTop() {
+        const MyportfolioPosition = Myportfolio.getBoundingClientRect();
+        if (MyportfolioPosition.top <= window.innerHeight && MyportfolioPosition.bottom > 0) {
+            backToTop.style.display = "flex"; // Show the arrow
+        } else {
+            backToTop.style.display = "none"; // Hide the arrow
+        }
+    }
+
+    // Event listener for scrolling
+    window.addEventListener("scroll", toggleBackToTop);
+});

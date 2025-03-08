@@ -27,12 +27,19 @@
 				<i class="fa-solid fa-moon" id="icon"></i>
 			</nav>
 			<div class="info">
-				<h2>I'm <span>Pritam</span></h2>
+				<h2>I'm <span>Pritam</span> Sundar Kar</h2>
+				<h3><span class="multiple-text"></span></h3>
 				<p>
 					This is my official portfolio website to showcase my all works related
 					to web development
 				</p>
-				<a href="">Download CV</a>
+				<a
+					href="portfolio_site_img/pritam_sundar_kar_resume_intern.pdf"
+					download
+					class="btn"
+					><span>Download CV</span>
+					<i class="fa-solid fa-download"></i>
+				</a>
 			</div>
 			<div class="img-box">
 				<img src="./portfolio_site_img/pattern.png" class="back-img" />
@@ -78,256 +85,286 @@
 				</ul>
 			</div>
 		</div>
-		<!-- --arroe to back to home page -->
-		<div class="back-to-top">
-			<a href="#hero"><i class="fa-solid fa-arrow-up"></i></a>
-			<!-- <div class="hover-message">Back to Home page</div> -->
-		</div>
-		<!-- about -->
-		<div id="about">
-			<div class="container">
-				<div class="row">
-					<div class="about-col-1">
-						<img src="./portfolio_site_img/IMG_20241011_165211.jpg" />
-					</div>
-					<div class="about-col-2">
-						<h2 class="sub-title">About Me</h2>
-						<p>
-							I am a passionate Software Development Engineer with expertise in
-							building scalable solutions. My skills range from frontend
-							development to backend engineering, with a keen interest in
-							creating impactful user experiences.
-						</p>
-						<div class="tab-titles">
-							<p class="tab-links active-link" onclick="opentab('skills')">
-								Skills
+		
+		<div id="Myportfolio" class="my-portfolio"><!-- --arrow to back to home page -->
+			<!-- Content of the portfolio page -->
+			<div class="back-to-top">
+				<a href="#hero">
+					<i class="fa-solid fa-arrow-up"></i>
+				</a>
+			</div>
+			<!-- about -->
+			<div id="about">
+				<div class="container">
+					<div class="row">
+						<div class="about-col-1">
+							<img src="./portfolio_site_img/IMG_20241011_165211.jpg" />
+						</div>
+						<div class="about-col-2">
+							<h2 class="sub-title">About Me</h2>
+							<p>
+								I am a passionate Software Development Engineer with expertise
+								in building scalable solutions. My skills range from frontend
+								development to backend engineering, with a keen interest in
+								creating impactful user experiences.
 							</p>
-							<p class="tab-links" onclick="opentab('experience')">
-								Experience
-							</p>
-							<p class="tab-links" onclick="opentab('education')">Education</p>
-						</div>
-						<div class="tab-contents active-tab" id="skills">
-							<ul>
-								<li><span>Programming Lang.</span><br />C,Python,Java</li>
-								<li><span>web development</span><br />Html,CSS,JavaScript</li>
-								<li>
-									<span>Backend development</span
-									><br />Java,SpringBoot,sql,mysql
-								</li>
-							</ul>
-						</div>
-						<div class="tab-contents" id="experience">
-							<ul>
-								<li>
-									<span>Problem solving</span><br />Data Structure & Algorithm
-								</li>
-								<li><span>web development</span><br />web app development</li>
-								<li>
-									<span>Backend development</span><br />Building logics and
-									store data for web design
-								</li>
-							</ul>
-						</div>
-						<div class="tab-contents" id="education">
-							<ul>
-								<li><span>2020</span><br />Secondary Education</li>
-								<li><span>2022</span><br />Higher Scendary Education</li>
-								<li><span>2022-2026</span><br />B-tech CSE</li>
-							</ul>
+							<div class="tab-titles">
+								<p class="tab-links active-link" onclick="opentab('skills')">
+									Skills
+								</p>
+								<p class="tab-links" onclick="opentab('experience')">
+									Experience
+								</p>
+								<p class="tab-links" onclick="opentab('education')">
+									Education
+								</p>
+							</div>
+							<div class="tab-contents active-tab" id="skills">
+								<ul>
+									<li><span>Programming Lang.</span><br />C,Python,Java</li>
+									<li><span>web development</span><br />Html,CSS,JavaScript</li>
+									<li>
+										<span>Backend development</span
+										><br />Java,SpringBoot,sql,mysql
+									</li>
+								</ul>
+							</div>
+							<div class="tab-contents" id="experience">
+								<ul>
+									<li>
+										<span>Problem solving</span><br />Data Structure & Algorithm
+									</li>
+									<li><span>web development</span><br />web app development</li>
+									<li>
+										<span>Backend development</span><br />Building logics and
+										store data for web design
+									</li>
+								</ul>
+							</div>
+							<div class="tab-contents" id="education">
+								<ul>
+									<li><span>2020</span><br />Secondary Education</li>
+									<li><span>2022</span><br />Higher Scendary Education</li>
+									<li><span>2022-2026</span><br />B-tech CSE</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- ------service----- -->
-		<div id="services">
-			<div class="container">
-				<h2 class="sub-title">My Services</h2>
-				<div class="services-list">
-					<div>
-						<i class="fa-solid fa-code"></i>
-						<h2>Web Developer</h2>
-						<h3>(user-facing elements recognition)</h3>
-						<p>
-							A technical professional, builds and maintains websites by writing
-							code using languages like HTML, CSS, and JavaScript, ensuring the
-							site functions properly, looks visually appealing, and provides a
-							smooth user experience across different devices.
-						</p>
-						<a href="https://github.com/">View</a>
-					</div>
-					<div>
-						<i class="fa-solid fa-crop-simple"></i>
-						<h2>Backend Developer</h2>
-						<h3>(server-side logic maintain)</h3>
-						<p>
-							Building and maintaining the server-side logic of a website or
-							application, handling data storage, security, and processing
-							actions that users can't directly see, essentially the
-							"behind-the-scenes" functionality that powers a website.
-						</p>
-						<a href="https://github.com/">View</a>
-					</div>
-					<div>
-						<i class="fa-brands fa-think-peaks"></i>
-						<h2>Problem Solver</h2>
-						<p>
-							Effectively analyze and solve coding challenges by applying
-							knowledge of Data Structures and Algorithms (DSA), choosing the
-							most suitable data structure (like arrays, linked lists, trees,
-							etc.) and algorithm (like sorting, searching, traversal) to
-							efficiently handle the problem's specific requirements, often with
-							a focus on time and space complexity.
-						</p>
-						<a href="https://github.com/">View</a>
+			<!-- ------service----- -->
+			<div id="services">
+				<div class="container">
+					<h2 class="sub-title">My Services</h2>
+					<div class="services-list">
+						<div>
+							<i class="fa-solid fa-code"></i>
+							<h2>Web Developer</h2>
+							<h3>(user-facing elements recognition)</h3>
+							<p>
+								A technical professional, builds and maintains websites by
+								writing code using languages like HTML, CSS, and JavaScript,
+								ensuring the site functions properly, looks visually appealing,
+								and provides a smooth user experience across different devices.
+							</p>
+							<a href="https://github.com/">View</a>
+						</div>
+						<div>
+							<i class="fa-solid fa-crop-simple"></i>
+							<h2>Backend Developer</h2>
+							<h3>(server-side logic maintain)</h3>
+							<p>
+								Building and maintaining the server-side logic of a website or
+								application, handling data storage, security, and processing
+								actions that users can't directly see, essentially the
+								"behind-the-scenes" functionality that powers a website.
+							</p>
+							<a href="https://github.com/">View</a>
+						</div>
+						<div>
+							<i class="fa-brands fa-think-peaks"></i>
+							<h2>Problem Solver</h2>
+							<p>
+								Effectively analyze and solve coding challenges by applying
+								knowledge of Data Structures and Algorithms (DSA), choosing the
+								most suitable data structure (like arrays, linked lists, trees,
+								etc.) and algorithm (like sorting, searching, traversal) to
+								efficiently handle the problem's specific requirements, often
+								with a focus on time and space complexity.
+							</p>
+							<a href="https://github.com/">View</a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- ----portfolio---- -->
-		<div id="portfolio">
-			<div class="container">
-				<h2 class="sub-title">My Projects</h2>
-				<div class="work-list">
-					<div class="work">
-						<img
-							src="portfolio_site_img/tic-tac-toe-icon-illustration-free-vector.jpg" />
-						<div class="layer">
-							<h3>Tic-Tac-Toe</h3>
-							<p>
-								Tic-tac-toe is a classic, two-player game played on a 3x3 grid
-								where players take turns marking spaces with X or O
-							</p>
-							<a href="https://github.com/"
-								><i class="fa-solid fa-arrow-up-right-from-square"></i
-							></a>
+			<!-- ----portfolio---- -->
+			<div id="portfolio">
+				<div class="container">
+					<h2 class="sub-title">My Projects</h2>
+					<div class="work-list">
+						<div class="work">
+							<img
+								src="portfolio_site_img/tic-tac-toe-icon-illustration-free-vector.jpg" />
+							<div class="layer">
+								<h3>Tic-Tac-Toe</h3>
+								<p>
+									Tic-tac-toe is a classic, two-player game played on a 3x3 grid
+									where players take turns marking spaces with X or O
+								</p>
+								<a href="https://github.com/"
+									><i class="fa-solid fa-arrow-up-right-from-square"></i
+								></a>
+							</div>
+						</div>
+						<div class="work">
+							<img src="portfolio_site_img/password-generator.png" />
+							<div class="layer">
+								<h3>Password Generator</h3>
+								<p>
+									a tool that creates random combinations of letters, numbers,
+									and symbols to generate strong, unique passwords for online
+									accounts
+								</p>
+								<a href="https://github.com/"
+									><i class="fa-solid fa-arrow-up-right-from-square"></i
+								></a>
+							</div>
+						</div>
+						<div class="work">
+							<img src="portfolio_site_img/amazon--600.png" />
+							<div class="layer">
+								<h3>Amazon clone</h3>
+								<p>
+									The Amazon Clone app provides a multi-vendor eCommerce
+									marketplace via which the vendors and the users can
+									communicate and sell/buy products.
+								</p>
+								<a href="https://github.com/"
+									><i class="fa-solid fa-arrow-up-right-from-square"></i
+								></a>
+							</div>
+						</div>
+						<div class="work">
+							<img src="portfolio_site_img/weather website.jpg" />
+							<div class="layer">
+								<h3>Weather Webiste</h3>
+								<p>
+									provides current and forecasted weather conditions for a
+									specific location, typically including temperature,
+									precipitation, wind speed, cloud cover, and other relevant
+									details.
+								</p>
+								<a href="https://github.com/"
+									><i class="fa-solid fa-arrow-up-right-from-square"></i
+								></a>
+							</div>
 						</div>
 					</div>
-					<div class="work">
-						<img src="portfolio_site_img/password-generator.png" />
-						<div class="layer">
-							<h3>Password Generator</h3>
-							<p>
-								a tool that creates random combinations of letters, numbers, and
-								symbols to generate strong, unique passwords for online accounts
-							</p>
-							<a href="https://github.com/"
-								><i class="fa-solid fa-arrow-up-right-from-square"></i
-							></a>
+					<a href="https://github.com/" class="bttn hover-msg">See More</a>
+				</div>
+			</div>
+			<!------ contact-me ------>
+			<div id="contact-me">
+				<div class="container">
+					<div class="row">
+						<div class="content-left">
+							<h2 class="sub-title">Contact Me</h2>
+							<p><i class="fa-solid fa-envelope"></i>karpritam194@gmail.com</p>
+							<p><i class="fa-solid fa-phone"></i>9679149798</p>
+							<div class="socials">
+								<ul class="social-links">
+									<li>
+										<a
+											class="likedin"
+											aria-label="LinkedIn"
+											href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin"
+											target="_blank"
+											><i class="fab fa-linkedin"></i
+										></a>
+									</li>
+									<li>
+										<a
+											class="github"
+											aria-label="GitHub"
+											href="https://github.com/"
+											target="_blank"
+											><i class="fab fa-github"></i
+										></a>
+									</li>
+									<li>
+										<a
+											class="twitter"
+											aria-label="Twitter"
+											href="https://x.com/home?lang=en"
+											target="_blank"
+											><i class="fa-brands fa-x-twitter"></i
+										></a>
+									</li>
+									<li>
+										<a class="telegram" aria-label="Telegram" target="_blank"
+											><i class="fab fa-telegram-plane"></i
+										></a>
+									</li>
+									<li>
+										<a class="instagram" aria-label="Instagram" href="#"
+											><i class="fab fa-instagram" target="_blank"></i
+										></a>
+									</li>
+								</ul>
+							</div>
+							<a
+								href="portfolio_site_img/pritam_sundar_kar_resume_intern.pdf"
+								download
+								class="bttn bttn2"
+								>Download CV</a
+							>
 						</div>
-					</div>
-					<div class="work">
-						<img src="portfolio_site_img/amazon--600.png" />
-						<div class="layer">
-							<h3>Amazon clone</h3>
-							<p>
-								The Amazon Clone app provides a multi-vendor eCommerce
-								marketplace via which the vendors and the users can communicate
-								and sell/buy products.
-							</p>
-							<a href="https://github.com/"
-								><i class="fa-solid fa-arrow-up-right-from-square"></i
-							></a>
-						</div>
-					</div>
-					<div class="work">
-						<img src="portfolio_site_img/weather website.jpg" />
-						<div class="layer">
-							<h3>Weather Webiste</h3>
-							<p>
-								provides current and forecasted weather conditions for a
-								specific location, typically including temperature,
-								precipitation, wind speed, cloud cover, and other relevant
-								details.
-							</p>
-							<a href="https://github.com/"
-								><i class="fa-solid fa-arrow-up-right-from-square"></i
-							></a>
+						<div class="content-right">
+							<form name="submit-to-google-sheet">
+								<input
+									type="text"
+									name="Name"
+									placeholder="Your Name"
+									required />
+								<input
+									type="email"
+									name="email"
+									placeholder="Your Email"
+									required />
+								<textarea
+									name="Message"
+									rows="6"
+									placeholder="Your Message"></textarea>
+								<button type="submit" class="bttn bttn2">Submit</button>
+							</form>
+							<span id="msg"></span>
 						</div>
 					</div>
 				</div>
-				<a href="https://github.com/" class="bttn hover-msg">See More</a>
-			</div>
-		</div>
-		<!------ contact-me ------>
-		<div id="contact-me">
-			<div class="container">
-				<div class="row">
-					<div class="content-left">
-						<h2 class="sub-title">Contact Me</h2>
-						<p><i class="fa-solid fa-envelope"></i>cse22074@cemk.ac.in</p>
-						<p><i class="fa-solid fa-phone"></i>9679149798</p>
-						<div class="socials">
-							<ul class="social-links">
-								<li>
-									<a
-										class="likedin"
-										aria-label="LinkedIn"
-										href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin"
-										target="_blank"
-										><i class="fab fa-linkedin"></i
-									></a>
-								</li>
-								<li>
-									<a
-										class="github"
-										aria-label="GitHub"
-										href="https://github.com/"
-										target="_blank"
-										><i class="fab fa-github"></i
-									></a>
-								</li>
-								<li>
-									<a
-										class="twitter"
-										aria-label="Twitter"
-										href="https://x.com/home?lang=en"
-										target="_blank"
-										><i class="fa-brands fa-x-twitter"></i
-									></a>
-								</li>
-								<li>
-									<a class="telegram" aria-label="Telegram" target="_blank"
-										><i class="fab fa-telegram-plane"></i
-									></a>
-								</li>
-								<li>
-									<a class="instagram" aria-label="Instagram" href="#"
-										><i class="fab fa-instagram" target="_blank"></i
-									></a>
-								</li>
-							</ul>
-						</div>
-						<a
-							href="images/pritam_sundar_kar_SDE-intern.pdf"
-							download
-							class="bttn bttn2"
-							>Download CV</a
-						>
-					</div>
-					<div class="content-right">
-						<form name="submit-to-google-sheet">
-							<input type="text" name="Name" placeholder="Your Name" required />
-							<input
-								type="email"
-								name="email"
-								placeholder="Your Email"
-								required />
-							<textarea
-								name="Message"
-								rows="6"
-								placeholder="Your Message"></textarea>
-							<button type="submit" class="bttn bttn2">Submit</button>
-						</form>
-						<span id="msg"></span>
-					</div>
+				<div class="copyright">
+					<p>Copyright © Pritam Sundar Kar 2025. All Rights Reserved.</p>
 				</div>
-			</div>
-			<div class="copyright">
-				<p>Copyright © Pritam Sundar Kar 2025. All Rights Reserved.</p>
 			</div>
 		</div>
 	</body>
+	<script>
+		const scriptURL =
+			"https://script.google.com/macros/s/AKfycbwSbQ6y43O67hWZPAtwm9xcU-E4I_og4zpSkUDavAhe6ymknZ34GCnpcLabzFgWXmJV/exec";
+		const form = document.forms["submit-to-google-sheet"];
+		const msg = document.getElementById("msg");
+		form.addEventListener("submit", (e) => {
+			e.preventDefault();
+			fetch(scriptURL, { method: "POST", body: new FormData(form) })
+				.then((response) => {
+					msg.innerHTML = "Message sent Successfully";
+					setTimeout(function () {
+						msg.innerHTML = "";
+					}, 5000);
+					form.reset();
+				})
+				.catch((error) => console.error("Error!", error.message));
+		});
+	</script>
+	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 	<script src="app.js"></script>
 </html>
