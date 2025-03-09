@@ -15,16 +15,17 @@
 	<body>
 		<div id="hero">
 			<nav>
-				<!-- <img src="./portfolio_site_img/logo.png" class="logo" /> -->
 				<h1 class="logo">Pritam<span>.s</span></h1>
-				<ul>
+				<ul id="side-menu">
 					<li><a href="#hero">HOME</a></li>
 					<li><a href="#about">ABOUT</a></li>
 					<li><a href="#services">SERVICES</a></li>
 					<li><a href="#portfolio">PORTFOLIO</a></li>
 					<li><a href="#contact-me">CONTACT ME</a></li>
+					<i class="fas fa-times" onclick="closemenu()"></i>
 				</ul>
-				<i class="fa-solid fa-moon" id="icon"></i>
+				<i class="fa-solid fa-sun" id="icon"></i>
+				<i class="fas fa-bars" onclick="openmenu()"></i>
 			</nav>
 			<div class="info">
 				<h2>I'm <span>Pritam</span> Sundar Kar</h2>
@@ -85,8 +86,9 @@
 				</ul>
 			</div>
 		</div>
-		
-		<div id="Myportfolio" class="my-portfolio"><!-- --arrow to back to home page -->
+
+		<div id="Myportfolio" class="my-portfolio">
+			<!-- --arrow to back to home page -->
 			<!-- Content of the portfolio page -->
 			<div class="back-to-top">
 				<a href="#hero">
@@ -192,7 +194,7 @@
 								efficiently handle the problem's specific requirements, often
 								with a focus on time and space complexity.
 							</p>
-							<a href="https://github.com/">View</a>
+							<a href="https://leetcode.com/u/Pritams04/">View</a>
 						</div>
 					</div>
 				</div>
@@ -211,7 +213,7 @@
 									Tic-tac-toe is a classic, two-player game played on a 3x3 grid
 									where players take turns marking spaces with X or O
 								</p>
-								<a href="https://github.com/"
+								<a href="https://github.com/karpritam/Tic_Tac_Toe"
 									><i class="fa-solid fa-arrow-up-right-from-square"></i
 								></a>
 							</div>
@@ -225,7 +227,7 @@
 									and symbols to generate strong, unique passwords for online
 									accounts
 								</p>
-								<a href="https://github.com/"
+								<a href="https://github.com/karpritam/password_generator"
 									><i class="fa-solid fa-arrow-up-right-from-square"></i
 								></a>
 							</div>
@@ -239,7 +241,7 @@
 									marketplace via which the vendors and the users can
 									communicate and sell/buy products.
 								</p>
-								<a href="https://github.com/"
+								<a href="https://github.com/karpritam/Amazon_clone"
 									><i class="fa-solid fa-arrow-up-right-from-square"></i
 								></a>
 							</div>
@@ -254,7 +256,7 @@
 									precipitation, wind speed, cloud cover, and other relevant
 									details.
 								</p>
-								<a href="https://github.com/"
+								<a href="https://github.com/karpritam/weather_app"
 									><i class="fa-solid fa-arrow-up-right-from-square"></i
 								></a>
 							</div>
@@ -328,7 +330,7 @@
 									required />
 								<input
 									type="email"
-									name="email"
+									name="Email"
 									placeholder="Your Email"
 									required />
 								<textarea
@@ -349,9 +351,9 @@
 	</body>
 	<script>
 		const scriptURL =
-			"https://script.google.com/macros/s/AKfycbwSbQ6y43O67hWZPAtwm9xcU-E4I_og4zpSkUDavAhe6ymknZ34GCnpcLabzFgWXmJV/exec";
+			"https://script.google.com/macros/s/AKfycbxIv9oMCvcByGXcielUKN5MXATFCOWLdHvC_TYbDeQ5P2K3sjS8dU1Flfcq6zDiJAjn3g/exec";
 		const form = document.forms["submit-to-google-sheet"];
-		const msg = document.getElementById("msg");
+
 		form.addEventListener("submit", (e) => {
 			e.preventDefault();
 			fetch(scriptURL, { method: "POST", body: new FormData(form) })

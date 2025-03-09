@@ -39,32 +39,45 @@ function opentab(tabname) {
 	document.getElementById(tabname).classList.add("active-tab");
 }
 
-
 // -----typed js------
-const typed=new Typed('.multiple-text',{
-    strings:['Software Development Engineer(SDE)'],
-    // strings:['software engineer','fullstack developer'],
-    typeSpeed: 70,
-    // backSpeed:70,
-    // backDelay: 1000,
-    // loop:true,
+const typed = new Typed(".multiple-text", {
+	strings: ["Software Development Engineer(SDE)"],
+	// strings:['software engineer','fullstack developer'],
+	typeSpeed: 70,
+	// backSpeed:70,
+	// backDelay: 1000,
+	// loop:true,
 });
 
 
+// back to top arrow js
 document.addEventListener("DOMContentLoaded", function () {
-    const backToTop = document.querySelector(".back-to-top");
-    const Myportfolio = document.querySelector("#Myportfolio");
+	const backToTop = document.querySelector(".back-to-top");
+	const Myportfolio = document.querySelector("#Myportfolio");
 
-    // Function to show/hide the back-to-top arrow
-    function toggleBackToTop() {
-        const MyportfolioPosition = Myportfolio.getBoundingClientRect();
-        if (MyportfolioPosition.top <= window.innerHeight && MyportfolioPosition.bottom > 0) {
-            backToTop.style.display = "flex"; // Show the arrow
-        } else {
-            backToTop.style.display = "none"; // Hide the arrow
-        }
-    }
+	// Function to show/hide the back-to-top arrow
+	function toggleBackToTop() {
+		const MyportfolioPosition = Myportfolio.getBoundingClientRect();
+		if (
+			MyportfolioPosition.top <= window.innerHeight &&
+			MyportfolioPosition.bottom > 0
+		) {
+			backToTop.style.display = "flex"; // Show the arrow
+		} else {
+			backToTop.style.display = "none"; // Hide the arrow
+		}
+	}
 
-    // Event listener for scrolling
-    window.addEventListener("scroll", toggleBackToTop);
+	// Event listener for scrolling
+	window.addEventListener("scroll", toggleBackToTop);
 });
+
+
+// for side menu using in small screen
+var sidmenu=document.getElementById("side-menu");
+function openmenu(){
+    sidmenu.style.right="0";
+}
+function closemenu(){
+    sidmenu.style.right="-200px";
+}
