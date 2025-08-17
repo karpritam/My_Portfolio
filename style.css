@@ -660,6 +660,8 @@ nav .fas{
 
     /* Social icons */
     .socials .social-links {
+		position: relative;
+		bottom: 130px;
         justify-content: center;
         margin-top: 20px;
     }
